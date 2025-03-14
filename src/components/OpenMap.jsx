@@ -125,7 +125,7 @@ function OpenMap({ formData }) {
     };
 
     return (
-        <div>
+        <div className="bg-gray-500 min-h-screen p-4">
             <div className="flex flex-col items-center mt-3 mb-7">
                 <p className="text-3xl font-bold">Name: {name || "No Name Provided"}</p>
                 <button onClick={() => navigate("/")}>Go Back to Home Page</button>

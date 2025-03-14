@@ -28,7 +28,7 @@ const Home = ({ setFormData }) => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4">
+        <div className="flex flex-col bg-slate-500 items-center justify-center min-h-screen p-4    ">
             <h1 className="text-2xl font-bold mb-4">User Form</h1>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <input

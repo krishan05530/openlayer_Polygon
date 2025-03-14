@@ -10,10 +10,19 @@ const Home = ({ setFormData }) => {
     
     const [name, setName] = useState('');
     const [phoneNo, setPhoneNo] = useState('');
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
 
+               if(!name || !phoneNo ) {
+            alert("Please fill all the fields"); 
+            return;
+        }
+
+        if(phoneNo.length !== 10) {
+            alert("Phone number should be 10 digits long");
+            return;
+        }
         setFormData({ name, phoneNo }); // ✅ Properly setting formData
         navigate("/map"); // ✅ Navigate correctly
     };

@@ -34,7 +34,7 @@ const Home = ({ setFormData }) => {
   
       const handleSearchKeyPress = (e) => {
         if (e.key === "Enter") {
-          e.preventDefault(); // Prevents form submission
+          e.preventDefault(); // 
           setSearch(""); // Clears search field
         }
       };
